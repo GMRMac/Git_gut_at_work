@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+  h1 {
+	font-family:"Ek Mukta";
+	font-size:32px;
+	text-align:center;
+	text-shadow:0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+	}
+p {
+	font-family:"Ek Mukta";
+	color:black;
+	font-size:14px;
+	font-weight:100;
+	text-decoration:none;
+	text-justify:auto;
+	padding:15px;
+	text-shadow:0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+	}
+
+h3 {
+	font-family:"Ek Mukta";
+	font-size:40px;
+    
+	font-weight:100;
+	color:black;
+	text-decoration:none;
+	text-align:center;
+	position:relative;
+	padding:15px;
+	text-shadow:0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+	}
+	
+h4 {
+	font-family:"Ek Mukta";
+	font-size:25px;
+	font-weight:100;
+	color:#E6E6E6;
+	text-decoration:none;
+	text-align:center;
+	position:relative;
+	padding:0px;
+	text-shadow:2px 2px 1px rgba(0,0,0,0.4);
+	}
+
+  
+.wrapper {
+position: relative;
+position: relative;
+ height: auto;
+    width: 1040px;
+ position: relative;
+ margin-right: auto;
+ margin-left: auto; 
+ 
+}
+.semiwrapper {
+    
+    box-shadow: 0px 8px1px 0px rgba(0,0,0,0.1);
+}
+body {
+   background-image: linear-gradient(to bottom, #FFD500, #FFD500 75px, #f3f3f3 75px);
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+);  
+height: auto;
+}
+
+.container {
+    overflow: hidden;
+    background-color: #FFD500 ;
+    font-family: "Ek Mukta";
+    height: 51px;
+}
+
+.container a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    height: 51px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.tekst {
+    background-color: white;
+    overflow: auto;
+}
+img{
+    
+}
+
+.left{
+    position: relative;
+    width: 45%;
+    float: left;
+}
+
+.right{
+    position: relative;
+    width: 45%;
+    float: right;
+}
+.line_img {
+    position: relative;
+    left: 3%;
+    top: 180px;
+}
+
+.whole {
+    position: relative;
+    left:150px;
+    width: 780px;
+    
+}
+
+#fisk:hover{
+    background-image: image('Pictures/Index/KNAPP_NERE.svg')
+}
+
+table {
+    
+	font-family:"Ek Mukta";
+	color:black;
+	font-size:20px;
+    text-align: center;
+	text-justify:auto;
+	padding:15px;
+	text-shadow:0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+}

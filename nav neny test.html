@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <script src="jquery-3.2.1.min.js"></script>
+    <title>Dale Trafikksenter</title>
+      <link rel="stylesheet" href="style_menu.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
+  </head>
+  <body>
+     <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!" style="color:#262626"><img src="Pictures/LOGO/LOGO_TEST.svg" height="70" style="position:relative; left:-20px;"></a>
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Home</a>
+        </li>
+        <li>
+          <a href="#!">About</a>
+        </li>
+        <li>
+          <a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Pricing</a>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+      <article>
+            <img class="image" src="Pictures/Index/banner2.jpg">
+            <h2>Velkommen til Dale Trafikksenter</h2>
+    <div id="stayOut">
+        <div class="right">
+            <table class="KnapperTable">
+                <tr><h1>Nyttige lenkar</h1></tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd">Fiskekort</td>
+                    <td class="knapperTd">Truckers Stop</td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_FISK_v2.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_FISK_v2.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_FISK_v2.svg'"></td>
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_TRUCK.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_TRUCK.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_TRUCK.svg'"></td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd">Propan</td>
+                    <td class="knapperTd">Tilhengar</td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_GASS.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_GASS.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_GASS.svg'"></td>
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_TILHENGAR_v4.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_TILHENGAR_v4.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_TILHENGAR_v4.svg'"></td>
+                </tr>
+
+
+            </table>
+        </div>
+        <div class="left"><h1>undertext</h1></div></div>
+
+
+
+      <p>here comeswerwerwerwerwerwerwer some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+
+
+
+      </article>
+
+      
+      <div id="blackbar">
+      <article style="background-color:transparent;">
+          <table id="tableBottomBanner">
+              <tr>
+              
+          <img id="logoBottomBanner" src="Pictures/LOGO/LOGO2.svg">
+              </tr>
+                <tr>
+                    <td><h3>Kjekke lenkar</h1></td>
+                    <td><h3>Kontakt oss</h1></td>
+              </tr><tr>
+                    <td id="OmOss">Om oss</td>
+                    <td>Email</td>
+              </tr><tr>
+                    <td>3</td>
+                    <td>Tlf</td>
+              </tr><tr>
+                    <td>5</td>
+                    <td>6</td>
+              </tr>
+          </table>
+          </article>
+      </div>
+      
+      <script>
+      (function($) {
+  $(function() {
+    $('nav ul li > a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+  });
+  document.querySelector('#nav-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+  $('#nav-toggle').click(function() {
+    $('nav ul').toggle();
+  });
+})(jQuery);
+      </script>
+  </body>
+</html>
