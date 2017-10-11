@@ -8,6 +8,7 @@ body {
 
 a {
     font-family: "Ek Mukta";
+    font-size: 1.25em;
 }
 
 
@@ -132,16 +133,19 @@ nav ul li ul li a {
     float: none;
   }
   nav ul li a {
-    padding: 15px;
+    padding: 30px;
     line-height: 20px;
   }
   nav ul li ul li a {
     padding-left: 30px;
   }
-
+    
   .nav-dropdown {
     position: static;
   }
+    a{
+        font-size: 4em;
+    }
       
 }
 @media screen and (min-width: 1081px) {
