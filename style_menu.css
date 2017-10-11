@@ -241,7 +241,7 @@ h3 {
 	font-family:"Ek Mukta";
 	font-size:2em;
 	text-align:left;
-    margin-top: 0px;
+    margin-top: -0.75em;
 	}
 
 #stayOut {
@@ -249,7 +249,7 @@ h3 {
     display:table;
 }
 
-#blackbar{
+#footer{
     background-color: #FFD500;
     height: 15em;
     
