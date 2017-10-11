@@ -2,60 +2,142 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Responsive Nav &middot; Advanced Demo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="responsive-nav.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Stylesheet/stylesheet.css">
-    <script src="responsive-nav.js"></script>
+      <script src="jquery-3.2.1.min.js"></script>
+    <title>Dale Trafikksenter</title>
+      <link rel="stylesheet" href="style_menu.css">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ek+Mukta">
   </head>
   <body>
-
-      <div class="wrapper">
-    <nav class="nav-collapse" style="position:static;">
-      <ul>
-        <li><a href="http://google.com">Home</a></li>
-        <li><a href="http://google.com">About</a></li>
-        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-        <li><a href="http://google.com">Projects</a></li>
-        <li><a href="http://google.com">Blog</a></li>
+     <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!" style="color:#262626"><img src="Pictures/LOGO/LOGO_TEST.svg" height="70" style="position:relative; left:-20px;"></a>
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">Home</a>
+        </li>
+        <li>
+          <a href="#!">About</a>
+        </li>
+        <li>
+          <a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="#!">Web Design</a>
+            </li>
+            <li>
+              <a href="#!">Web Development</a>
+            </li>
+            <li>
+              <a href="#!">Graphic Design</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">Pricing</a>
+        </li>
+        <li>
+          <a href="#!">Contact</a>
+        </li>
       </ul>
     </nav>
-      <img src="Pictures/Index/banner.JPG" width="1040">
-          
-          
-          
-            
-          
-        <div class="tekst">
-          fuck my fucking life
+  </div>
+</section>
+      <article>
+            <img class="image" src="Pictures/Index/banner2.jpg">
+            <h2>Velkommen til Dale Trafikksenter</h2>
+    <div id="stayOut">
+        <div class="right">
+            <table class="KnapperTable">
+                <tr><h1>Nyttige lenkar</h1></tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd">Fiskekort</td>
+                    <td class="knapperTd">Truckers Stop</td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_FISK_v2.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_FISK_v2.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_FISK_v2.svg'"></td>
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_TRUCK.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_TRUCK.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_TRUCK.svg'"></td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd">Propan</td>
+                    <td class="knapperTd">Tilhengar</td>
+                </tr>
+                <tr class="knapperTr">
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_GASS.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_GASS.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_GASS.svg'"></td>
+                    <td class="knapperTd"><img class="knappBilde" src="Pictures/Button/KNAPP_STANDARD_TILHENGAR_v4.svg" onmouseover="src='Pictures/Button/KNAPP_NERE_TILHENGAR_v4.svg'" onmouseout="src='Pictures/Button/KNAPP_STANDARD_TILHENGAR_v4.svg'"></td>
+                </tr>
+
+
+            </table>
         </div>
+        <div class="left"><h1>undertext</h1></div></div>
+
+
+
+      <p>here comeswerwerwerwerwerwerwer some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes some text</p>
+      <p>here comes somes text</p>
+
+
+
+      </article>
+
       
-      
-      
-      
-      
-      
+      <div id="blackbar">
+      <article style="background-color:transparent;">
+          <table id="tableBottomBanner">
+              <tr>
+              
+          <img id="logoBottomBanner" src="Pictures/LOGO/LOGO2.svg">
+              </tr>
+                <tr>
+                    <td><h3>Kjekke lenkar</h1></td>
+                    <td><h3>Kontakt oss</h1></td>
+              </tr><tr>
+                    <td id="OmOss">Om oss</td>
+                    <td>Email</td>
+              </tr><tr>
+                    <td>3</td>
+                    <td>Tlf</td>
+              </tr><tr>
+                    <td>5</td>
+                    <td>6</td>
+              </tr>
+          </table>
+          </article>
       </div>
       
-      
-    <script>
-      var navigation = responsiveNav(".nav-collapse", {
-        animate: true,                    // Boolean: Use CSS3 transitions, true or false
-        transition: 284,                  // Integer: Speed of the transition, in milliseconds
-        label: "Menu",                    // String: Label for the navigation toggle
-        insert: "after",                  // String: Insert the toggle before or after the navigation
-        customToggle: "",                 // Selector: Specify the ID of a custom toggle
-        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
-        openPos: "relative",              // String: Position of the opened nav, relative or static
-        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
-        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
-        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
-        init: function(){},               // Function: Init callback
-        open: function(){},               // Function: Open callback
-        close: function(){}               // Function: Close callback
-      });
-    </script>
-
+      <script>
+      (function($) {
+  $(function() {
+    $('nav ul li > a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+  });
+  document.querySelector('#nav-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+  });
+  $('#nav-toggle').click(function() {
+    $('nav ul').toggle();
+  });
+})(jQuery);
+      </script>
   </body>
 </html>
