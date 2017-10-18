@@ -21,7 +21,7 @@ a.footer {
 p {
 	font-family:"Ek Mukta";
 	color:#262626;
-	font-size:14px;
+	font-size:16px;
 	font-weight:100;
 	text-decoration:none;
 	text-justify:auto;
@@ -43,10 +43,12 @@ p {
   height: 70px;
   background: #FFD500;
   z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
 .brand {
-  position: absolute;
+  position: relative;
   padding-left: 20px;
   float: left;
   line-height: 70px;
@@ -128,7 +130,7 @@ nav ul li ul li a {
 
   nav {
     width: 100%;
-    padding: 70px 0 0px;
+    margin-top: -27.5px;
   }
   nav ul {
     display: none;
@@ -137,11 +139,11 @@ nav ul li ul li a {
     float: none;
   }
   nav ul li a {
-    padding: 10px;
+    padding:10px;
     line-height: 2em;
   }
   nav ul li ul li a {
-    padding-left: 30px;
+    padding-left: 50px;
   }
     
   .nav-dropdown {
@@ -150,6 +152,16 @@ nav ul li ul li a {
     a{
         font-size: 4em;
     }
+    
+    .whiteSpace {
+    position: relative;
+    height:0px;
+}
+    .right{
+    position: relative;
+    width: 100%;
+    float: right;
+}
       
 }
 @media screen and (min-width: 1081px) {
@@ -201,6 +213,7 @@ article {
   max-width: 1000px;
   margin: 0 auto;
   background-color: #ffffff;
+    
 }
 
 .image {
@@ -267,4 +280,13 @@ h3 {
     position: relative;
     width: 65%;
     padding-top: 3em;
+}
+.whiteSpace {
+    position: relative;
+    height:50px;
+}
+
+.nav-dropdown-text {
+    padding-top: 30px;
+    height: 30px;
 }

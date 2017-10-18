@@ -1,0 +1,517 @@
+
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+
+.blueBox{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height: 209px;
+    width: 400px;
+    top:-225px;
+    z-index: 1;
+    margin: auto;
+    
+}
+
+#imageSecondLeft {
+    float: left;
+    width: 41.66%;
+    position: relative;
+    top: -129px;     
+}
+
+
+#imageSecondRight {
+     float: right;
+    width: 41.66%;
+}
+
+a.footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+	color:#231161;
+    text-decoration: none;
+}
+
+a:hover{
+	color:#231161;
+}
+
+a:visited{
+	color:#231161;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+	color:#231161;
+	font-size:14px;
+	font-weight:100;
+	text-decoration:none;
+	text-justify:auto;
+	}
+
+p.text {
+    font-family: 'Roboto', sans-serif;
+	color:#231161;
+	font-size:2em;
+	font-weight:100;
+	text-decoration:none;
+	text-justify:auto;
+	padding:150px;  
+    text-align: center;
+	}
+
+.navigation {
+  height: 114px;
+  z-index: 1;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  top:1em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.blueBox{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height: 209px;
+    width: 400px;
+    top:-225px;
+    z-index: 1;
+    margin: auto;
+    
+}
+
+.blueBoxLeft{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height:auto;
+    width: 400px;
+    display: inline-block;
+    top: -297px;
+    left:100px;
+    
+
+}
+.blueBoxRight{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height: auto;
+    width:27.7777777%;
+    z-index: 1;
+    float: right;
+    top:-625px;
+    right: 100px;
+    
+    
+}
+
+.blueBoxHeader{
+    position: relative;
+    text-align: center;
+    padding-top: 45px;
+    color:white;
+    font-size: 2em;
+}
+
+.blueBoxText{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    width: 250px;
+    color:white;
+    font-size: 1em;
+}
+
+.nav-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #FFFFFF;
+  color: #262626;
+  text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #EC1C24;
+  color: #ffffff;
+}
+/**
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+} **/
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #262626;
+  height: 90px;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1081px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 0px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 10px;
+    line-height: 2em;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+    
+  .nav-dropdown {
+    position: static;
+  }
+    a{
+        font-size: 4em;
+    }
+    
+    .brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  top:0em;
+}    
+.blueBoxLeft{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height:auto;
+    width: 50%;
+    display: inline-block;
+    top: -230px;
+    left:0;
+    
+
+}
+.blueBoxRight{
+    position: relative;
+    background-color: #231161;
+    opacity: 0.8;
+    height: auto;
+    width: 50%;
+    z-index: 1;
+    top:-424px;
+    right: 0;
+    float: right;
+    
+    
+}
+    
+    #imageSecondLeft {
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -129px;     
+}
+
+
+#imageSecondRight {
+     float: right;
+    width: 50%;
+}
+    
+    
+}
+@media screen and (min-width: 1081px) {
+  .nav-list {
+    display: block !important;
+  }
+ 
+}
+#nav-toggle {
+  position: absolute;
+  left: 14px;
+  top: 25px;
+  cursor: pointer;
+  padding: 14px 10px 3px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 2px;
+  height: 9px;
+  width: 75px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -20px;
+}
+#nav-toggle span:after {
+  bottom: -20px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+article {
+  max-width: 1440px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+    
+}
+
+#divIcons{
+    background-color: #F9F9F9;
+    height: auto;
+}
+
+#divPicture{
+    background-color: #FFFFFF;
+}
+#divLast{
+    background-color: #F9F9F9;
+}
+
+
+footer{
+    background-color:#231161;
+    height: auto;
+}
+
+  h2 {
+    font-family: 'Roboto', sans-serif;;
+	font-size:3em;
+	text-align:center;
+    position: relative;
+    padding: 1em;
+    margin-top: 0px;
+    }  
+h1 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+	font-size:2.75em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-weight: 100;
+    color:#231161;
+    max-width: 696px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+	}
+h3 {
+	font-family: 'Roboto', sans-serif;;
+	font-size:2em;
+	text-align:left;
+	}
+
+
+.imageFirst {
+    width: 100%;
+    position: relative;
+    top:-50px;
+
+}
+
+
+
+.image {
+    width: 100%;
+    position: relative;
+}
+
+
+img.knappBildeLeft{
+    max-height: 855px;
+    min-height: 128px;
+}
+
+img.knappBildeRight{
+    min-height: 128px;
+    width:100%;
+
+}
+
+
+.divIcon{
+    height: auto;
+    position: relative;
+    padding-left: 200px;
+}
+
+#TwoPictures{
+    display:inline-block;
+    width: 100%;    
+}
+#TwoDivs{
+    display:inline-block;
+    width: 100%;    
+}
+
+
+
+ul.ulIcon {
+  text-align: center;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+}
+
+li.loc-caption {
+  width: 25%;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+li.loc-caption img#loc1, img#loc2, img#loc3, img#loc4, img#loc5 {
+  max-width: 100%;
+  height: auto;
+}
+
+p.whiteText{
+    color: #FFFFFF;
+}
+
+li.whiteList{
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+ul.whiteUlist{
+  padding-left: 25%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Roboto', sans-serif;;
+}
+    

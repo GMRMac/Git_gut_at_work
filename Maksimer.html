@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <script src="jquery-3.2.1.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="Stylesheet/style_maksimer.css">
+      <title>Maksimer programering test</title>
+  </head>
+  <body>
+    <section class="navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!"><img src="Pictures/maksimerGraphic/logo.png" ></a>
+        </div>
+        <nav id="meny">
+          <div class="nav-mobile">
+            <a id="nav-toggle" href="#!"><span></span></a>
+          </div>
+          <ul style="position:relative; margin-top:20px;" class="nav-list">
+            <li>
+              <a href="#!">Prosjekter</a>
+            </li>
+            <li>
+              <a href="#!">Produkter</a>
+<!--    This is the dropdown meny content
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Content 1</a>
+                </li>
+                <li>
+                  <a href="#!">Content 2</a>
+                </li>
+                <li>
+                  <a href="#!">Content 3</a>
+                </li>
+              </ul> -->
+                <li>
+              <a href="#!">Tjenester</a>
+<!--    This is the dropdown meny content
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#!">Content 1</a>
+                </li>
+                <li>
+                  <a href="#!">Content 2</a>
+                </li>
+                <li>
+                  <a href="#!">Content 3</a>
+                </li>
+                <li>
+                  <a href="#!">Content 4</a>
+                </li>
+                <li>
+                  <a href="#!">Content 5</a>
+                </li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="#!">Om oss</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+        <div id="divIcons">
+            <article>
+               <h1>Et designbyrå med kreative hoder og kommersiell teft</h1>
+               <ul class="ulIcon">
+                    <li class="loc-caption" >
+                        <img id="loc1" src="Pictures/maksimerGraphic/merkeopplevelsemerkeopplevelse.png" /><br>Merkeopplevelse
+                    </li>
+                    <li class="loc-caption">
+                        <img id="loc2" src="Pictures/maksimerGraphic/digital-design.png" /><br>Digital Design
+                    </li>
+                    <li class="loc-caption">
+                        <img id="loc3" src="Pictures/maksimerGraphic/tjenestedesign.png" /><br>Tjenestedesign
+                    </li>
+                </ul>
+                <ul class="ulIcon">
+                    <li class="loc-caption">
+                        <img id="loc4" src="Pictures/maksimerGraphic/omgivelsesdesign.png" /><br>Omgivelsesdesign
+                    </li>
+                    <li class="loc-caption">
+                        <img id="loc5" src="Pictures/maksimerGraphic/produktdesign.png" /><br>Produktutvikling
+                    </li>
+                </ul>
+                <p class="text">Vårt arbeid</p>
+            </article>
+        </div>
+        <div id="divPicture">
+            <article>
+                <img class="imageFirst" src="Pictures/maksimerImage/bitmap_1.jpg">
+                    <div class="blueBox">
+                        <h3 class="blueBoxHeader">Navn på prosjektet</h3>
+                            <p class="blueBoxText">Merkeopplevelse, nettside, wayfinding</p>
+                    </div>
+                <div id="TwoPictures">            
+                    <div id="TwoPicturesLeft">
+                        <img id="imageSecondLeft" class="knappBildeLeft" src="Pictures/maksimerImage/bitmap_2.jpg">           
+                        <img id="imageSecondRight" class="knappBildeLeft" src="Pictures/maksimerImage/bitmap_3.jpg">
+                    </div>
+                    <div id="TwoDivs">
+                        <div class="blueBoxLeft">
+                            <h3 class="blueBoxHeader">Navn på prosjektet</h3>
+                                <p class="blueBoxText">Merkeopplevelse, nettside, wayfinding</p>
+                        </div>
+                        <div class="blueBoxRight">
+                            <h3 class="blueBoxHeader">Navn på prosjektet</h3>
+                                <p class="blueBoxText">Merkeopplevelse, nettside, wayfinding</p>
+                        </div>
+                    </div>                                                
+                </div>
+              <p class="text">Se alle våre prosjekter</p>
+            </article>
+        </div>
+        <div id="divLast">
+            <article>
+                <div>
+                    <h1>Vi vil gjerne høre fra deg!<br> Gi oss en lyd</h1>
+                        <p class="text"><a href="#">Ta kontakt her</a></p>
+                    <img class="image" src="Pictures/maksimerImage/bitmap_4.jpg">
+                </div>  
+            </article>
+        </div>
+        <footer>
+            <article>
+                    <ul class="whiteUlist">
+                        <li class="whiteList">
+                            <p class="whiteText">12 34 56 78<br>epost@epost.no <br><br>Firmanvn AS</p>
+                        </li>
+                        <li class="whiteList">
+                            <p class="whiteText">Adresseveien 1,<br> 5011 Bergen,  Norway</p>
+                        </li>
+                        <li class="whiteList">
+                            <p class="whiteText">Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.
+                            <br><br>
+                            Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.
+                        </li>
+                    </ul>
+            </article>
+      </footer>
+        <script>
+          (function($) {
+            $(function() {
+                $('nav ul li > a:not(:only-child)').click(function(e) {
+                $(this).siblings('.nav-dropdown').toggle();
+                $('.nav-dropdown').not($(this).siblings()).hide();
+                e.stopPropagation();
+                });
+                $('html').click(function() {
+                  $('.nav-dropdown').hide();
+                });
+            });
+            document.querySelector('#nav-toggle').addEventListener('click', function() {
+                this.classList.toggle('active');
+                });
+                $('#nav-toggle').click(function() {
+                $('nav ul').toggle();
+              });
+            })(jQuery);
+          </script> 
+  </body>
+</html>
