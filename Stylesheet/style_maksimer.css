@@ -119,6 +119,7 @@ p.text {
 .navigation {
   height: 114px;
   z-index: 1;
+    font-size: 1.25em;
 }
 
 .brand {
@@ -127,8 +128,6 @@ p.text {
   float: left;
   line-height: 70px;
   text-transform: uppercase;
-  font-size: 1.4em;
-  top:1em;
 }
 .brand a,
 .brand a:visited {
@@ -253,7 +252,7 @@ nav ul li ul li a {
   top: 0;
   right: 0;
   background: #262626;
-  height: 90px;
+  height: 100px;
   width: 100px;
 }
 
